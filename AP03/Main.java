@@ -4,9 +4,9 @@ public class Main
 {
 	public static void main(String[] args) {
 		BombaCombustivel gasolinaComum = new BombaCombustivel("Gasolina Comum", 5.75, 1000);
-    BombaCombustivel gasolinaAditivada = new BombaCombustivel("Gasolina Aditivada", 6.00, 1500);
-    BombaCombustivel alcool = new BombaCombustivel("Álcool", 4.20, 800);
-    BombaCombustivel diesel = new BombaCombustivel("Diesel", 4.80, 1200);
+    		BombaCombustivel gasolinaAditivada = new BombaCombustivel("Gasolina Aditivada", 6.00, 1500);
+    		BombaCombustivel alcool = new BombaCombustivel("Álcool", 4.20, 800);
+    		BombaCombustivel diesel = new BombaCombustivel("Diesel", 4.80, 1200);
 		
 		BombaCombustivel[] bombas = { gasolinaComum, gasolinaAditivada, alcool, diesel };
 		 
@@ -14,11 +14,11 @@ public class Main
 		System.out.println("Olá, tudo bom?");
 		System.out.println("Qual tipo de combustivel deseja utilizar?:");
 		System.out.println("Escolha o tipo de combustível:");
-    for (int i = 0; i < bombas.length; i++) {
-      System.out.println((i + 1) + " - " + bombas[i].getTipoCombustivel());
-    }
-    System.out.print(": ");
-    int escolhaCombustivel = scanner.nextInt();
+	        for (int i = 0; i < bombas.length; i++) {
+	      	   System.out.println((i + 1) + " - " + bombas[i].getTipoCombustivel());
+	    	}
+	        System.out.print(": ");
+	        int escolhaCombustivel = scanner.nextInt();
 		
 		System.out.println("Valor do " +  bombas[escolhaCombustivel - 1].getTipoCombustivel() + ": " + bombas[escolhaCombustivel - 1].getValorLitro());
 		System.out.println("Quantidade disponivel de litros de " + bombas[escolhaCombustivel - 1].getTipoCombustivel() + ": " + bombas[escolhaCombustivel - 1].getQuantidadeCombustivel());
@@ -46,10 +46,10 @@ public class Main
 		System.out.println(" ");
 		System.out.println("=================================================");
 		System.out.println("Valor e Quantidade total de combustível na bomba:");
-    System.out.println("Gasolina Comum - " + gasolinaComum.getValorLitro() + ": " + gasolinaComum.getQuantidadeCombustivel() + " litros");
-    System.out.println("Gasolina Aditivada - " + gasolinaAditivada.getValorLitro() + ": " + gasolinaAditivada.getQuantidadeCombustivel() + " litros");
-    System.out.println("Álcool - " + alcool.getValorLitro() + ": " + alcool.getQuantidadeCombustivel() + " litros");
-    System.out.println("Diesel - " + diesel.getValorLitro() + ": " + diesel.getQuantidadeCombustivel() + " litros");
+    	        System.out.println("Gasolina Comum - " + gasolinaComum.getValorLitro() + ": " + gasolinaComum.getQuantidadeCombustivel() + " litros");
+    		System.out.println("Gasolina Aditivada - " + gasolinaAditivada.getValorLitro() + ": " + gasolinaAditivada.getQuantidadeCombustivel() + " litros");
+    		System.out.println("Álcool - " + alcool.getValorLitro() + ": " + alcool.getQuantidadeCombustivel() + " litros");
+    		System.out.println("Diesel - " + diesel.getValorLitro() + ": " + diesel.getQuantidadeCombustivel() + " litros");
 		System.out.println("Obrigado e tenha um ótimo dia!");
 	}
 }
